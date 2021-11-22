@@ -1,12 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap');
 body {
-    background-color: #CAB8FF;
+    background-color: #B5DEFF;
     font-family: 'Montserrat', sans-serif;
 }
 
 #navbar-section {
-    background-color: #CAB8FF;
+    background-color: #B5DEFF;
+    background-image: url("vine-1.png");
+    background-size: 25% 75%;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 .modal-header {
@@ -15,7 +22,9 @@ body {
     overflow: hidden;
 }
 
-img { max-width: 25%; height: 25%; }
+.banner-img-right {
+
+}
 
 
 .modal-title {
