@@ -1,8 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap');
 body {
-    background-color: lightskyblue;
+    background-color: #CAB8FF;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #navbar-section {
-    background-color: deepskyblue;
+    background-color: #CAB8FF;
 }
 
+.modal-header {
+    justify-content: center;
+    background-color: #B5DEFF;
+    overflow: hidden;
+}
+
+img { max-width: 25%; height: 25%; }
+
+
+.modal-title {
+    font-weight: bold;
+    font-size: 3rem;
+}

@@ -28,9 +28,9 @@
 <section id="body-section">
     <div class="container-fluid">
         <div class="row justify-content-end">
-            <div class="col-sm-12 col-md-4">
-                <div class="input-group rounded shadow mt-3">
-                    <input type="text" class="form-control text-center" placeholder="search a log" aria-label="search" aria-describedby="search-box-span">
+            <div class="col-sm-12">
+                <div class="input-group rounded shadow mt-3" id="input-span">
+                    <input id="search" type="text" class="form-control text-center" placeholder="search a log" aria-label="search" aria-describedby="search-box-span">
                     <span class="input-group-text" id="search-box-span">search</span>
                 </div>
 
@@ -41,10 +41,52 @@
 
 <section id="footer-section">
     <div class="container-fluid text-end">
-        <button class="btn btn-primary mt-3">add log</button>
+        <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#water-modal" >add log</button>
 
     </div>
 </section>
+
+<div class="modal fade" id="water-modal" tabindex="-1" aria-labelledby="waterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-md-down rounded shadow">
+        <div class="modal-content" style="background-color: #B5DEFF">
+            <div class="modal-header">
+                <img src="watercan-left.svg" alt="" width="375" height="375">
+                <h5 class="modal-title">water</h5>
+                <img src="watercan.svg" alt="" width="375" height="375">
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="water-addon">type</span>
+                    <input type="text" class="form-control" placeholder="water type" aria-label="Water Type" aria-describedby="#water-addon">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="quantity-addon">quantity</span>
+                    <input type="number" class="form-control" placeholder="qty" aria-label="quantity" aria-describedby="#quantity-addon">
+                    <select class="input-group-text" name="uom" id="uom-select" aria-label="unit of measure" aria-describedby="quantity-addon">
+                        <option value="ml">ml</option>
+                        <option value="liters">liters</option>
+                        <option value="gallons">gallons</option>
+                        <option value="fl oz">fl o</option>
+                        <option value="cups">cups</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="date-addon">date</span>
+                    <input type="date" class="form-control" placeholder="date" aria-label="date" aria-describedby="#date-addon">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="time-addon">time</span>
+                    <input type="time" class="form-control" placeholder="date" aria-label="date" aria-describedby="#time-addon">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                <button type="button" class="btn btn-primary">save</button>
+            </div>
+        </div>
+</div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
